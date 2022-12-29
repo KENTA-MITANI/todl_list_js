@@ -2,13 +2,17 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>タイトル</title>
+        <title>Todoリスト</title>
     </head>
     <body>
         <h1>Todoリスト</h1>
-        <form action="#" id="form">
-            <input type="text" id="input">
-            <input type="submit" value="送信">
+        <form>
+            <input type="text" id="input" name="word">
+            <input type="button" value="追加" onclick="addTodo();">
         </form>
+        <h3>一覧</h3>
+        <ul id="li_parent"></ul>
+        <footer></footer>
+        <script src="./script.js"></script>
     </body>
 </html>
